@@ -1,362 +1,454 @@
-# 🤖🐦 통합 소셜미디어 인재 추천 분석 시스템
+# Baryon Agents Parallel Environment | Spec-driven AI Agents Parallel Isolated Workspace
+🚀 Integrated Environment for Agents Parallel Programming - Provides simultaneous workspace for Claude, Cursor, Gemini, Kino agents with Git worktree isolation, TMUX session management, and flexible Spec-driven workflow conversion.
 
-> **Integrated Social Media Talent Recommendation Analysis System**
 
-정부 인재 추천을 이메일과 트위터 댓글에서 인공지능으로 자동 분석하고 분류하는 통합 오픈소스 시스템입니다.
+## 🎯 Overview
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![AI Powered](https://img.shields.io/badge/AI-Powered-green.svg)](https://ollama.ai/)
+**🚀 Integrated Environment for Agents Parallel Programming** - Complete development ecosystem for simultaneous AI agent collaboration
 
-## ✨ 주요 기능
+### 🎪 Core Concepts
+- **🤖 Agents Parallel Programming**: Multiple AI agents working simultaneously and independently
+- **🔄 Spec-Driven Workflow Conversion**: Flexible conversion from master specification to agent-specific formats (Claude MD, Cursor MDC, Gemini MD, Kino AWS)
+- **🌿 Git Worktree Isolation**: Independent branches and workspaces for each agent
+- **🖥️ TMUX Session Management**: Stable terminal environment and session persistence
+- **📊 Real-time Monitoring**: Real-time tracking of agent activities and status
 
-### 🎯 AI 기반 통합 분석
-- **📧 이메일 분석**: 정부 인재 추천 이메일 자동 분류 및 요약
-- **🐦 트위터 댓글 분석**: 소셜미디어 댓글에서 인재 추천 발굴
-- **🔄 통합 처리**: 동일한 AI 모듈로 멀티 플랫폼 분석
-- **📊 추천 유형 분류**: "본인지원", "타인추천", "의견제시" 자동 구분
-- **🎯 정부 직책 추출**: 30+ 정부 직책명 자동 인식
-- **📝 스마트 요약**: AI가 핵심 내용만 추려서 요약
-- **🔖 키워드 추출**: 학력, 경력, 전문분야 자동 태깅
-- **⭐ 신뢰도 점수**: AI 분석 결과의 품질을 1-10점으로 평가
+### 🏆 Key Features
+- **🚀 Parallel Development Environment**: Multiple AI agents working simultaneously and independently
+- **🔧 Git Worktree-based Isolation**: Each AI agent works in independent Git branches
+- **🖥️ TMUX Session Integration**: Stable terminal environment and session persistence
+- **🔄 Flexible Spec Conversion**: Seamless conversion from master spec to agent-specific formats with real-time synchronization
+- **📈 Real-time Dashboard**: Integrated VSCode Activity Bar for managing all agents
 
-### 🤖 다양한 AI 제공자 지원
-- **🏠 Ollama (로컬 AI)**: 완전한 온디바이스 처리, 개인정보 보호 최적화
-- **🌐 OpenAI GPT**: 클라우드 기반 고성능 분석
-- **🧠 Claude**: Anthropic의 정확한 한국어 AI 분석
+## 🚀 Features
 
-### 📈 소셜미디어 지표 분석
-- **👍 인기도 측정**: 좋아요, 리트윗, 댓글 수 추적
-- **📱 컨텍스트 이해**: 원글 내용과 함께 댓글 분석
-- **📊 트렌드 분석**: 인기있는 추천 댓글 패턴 파악
+### ✨ 주요 기능 (v1.3.0)
+- 🎯 **마스터 스펙 관리**: Requirements, Design, Tasks 중앙 집중 관리
+- 🔄 **유연한 스펙 변환**: 마스터 스펙에서 에이전트별 형식으로 자유로운 전환 (Claude MD ↔ Cursor MDC ↔ Gemini MD ↔ Kino AWS)
+- 🌿 **Git Worktree 격리**: 각 에이전트별 독립 브랜치 및 워크스페이스 생성
+- 🖥️ **TMUX 세션 관리**: 안정적인 터미널 환경 및 세션 지속성 보장
+- 📊 **VSCode 통합**: Activity Bar 통합 직관적 UI로 모든 에이전트 관리
+- 📈 **실시간 모니터링**: 각 에이전트 상태 및 활동 내역 실시간 추적
+- 🎬 **TMUX 터미널 세션**: 안정적인 에이전트 터미널 환경 제공
+- 📅 **Activity Timeline**: 시각적 타임라인으로 에이전트 활동 추적
+- 💾 **Activity Export**: 감사 추적을 위한 활동 로그 내보내기
+- 🚀 **병렬 개발 환경**: 여러 에이전트 동시 작업으로 개발 속도 향상
 
-### 🗄️ 체계적인 데이터 관리
-- **🔗 통합 데이터베이스**: 이메일과 트위터 데이터를 하나의 SQLite DB에서 관리
-- **📤 다양한 내보내기**: CSV, Excel 호환 형식으로 결과 내보내기
-- **📊 통계 대시보드**: 플랫폼별, 유형별, 직책별 상세 통계
+### 🤖 지원 AI 에이전트
+- **Claude**: `.claude/rules.md`
+- **Cursor**: `.cursor/rules.mdc`
+- **Gemini**: `.gemini/instructions.md`
+- **Kino (AWS)**: `.kino/spec.aws`
+- **확장 가능**: 새로운 에이전트 쉽게 추가
 
-## 🚀 빠른 시작
+## 📦 Installation
 
-### 1. 📥 설치
+### 1. VSCode Marketplace에서 설치
 ```bash
-# 저장소 클론
-git clone <repository-url>
-cd integrated-talent-analyzer
-
-# 필수 라이브러리 설치
-pip install -r requirements.txt
+# VSCode에서 Extensions 검색
+AI Multi-Agent Spec Extension
 ```
 
-### 2. 🤖 AI 설정
-
-#### 🏠 Ollama (로컬 AI - 권장)
+### 2. 수동 설치
 ```bash
-# 1. Ollama 설치
-# Windows/Mac: https://ollama.ai/download
-# Linux: curl -fsSL https://ollama.ai/install.sh | sh
-
-# 2. 한국어 지원 모델 다운로드
-ollama pull llama3.1:8b      # 균형잡힌 성능
-ollama pull qwen2:7b         # 한국어 특화
-ollama pull solar:10.7b      # 고성능 (높은 메모리 필요)
-
-# 3. 서비스 시작
-ollama serve
+# GitHub에서 다운로드
+git clone https://github.com/your-repo/ai-multi-agent-spec-extension
+cd ai-multi-agent-spec-extension
+npm install
+npm run package
 ```
 
-#### 🌐 외부 API (선택사항)
+### 3. 필수 요구사항
+- **VSCode**: 1.80 이상
+- **Git**: 2.20 이상 (worktree 지원)
+- **Node.js**: 16 이상
+
+## 🔧 Setup
+
+### 1. 프로젝트 초기화
 ```bash
-# OpenAI API 키 또는 Claude API 키 준비
-# 프로그램 실행 후 "AI 설정 구성" 메뉴에서 입력
+# 프로젝트 폴더에서
+Ctrl+Shift+P → "AI Multi-Agent: Initialize Project"
 ```
 
-### 3. 🎬 실행
+### 2. 마스터 스펙 생성
+```markdown
+# .ai-specs/master-spec.md
+
+# Project: My Amazing App
+
+## Requirements
+### REQ-001: 사용자 인증
+- **우선순위**: High
+- **설명**: JWT 기반 로그인/로그아웃
+- **수용 기준**: 
+  - [ ] 이메일/패스워드 로그인
+  - [ ] 토큰 자동 갱신
+  - [ ] 보안 검증
+
+## Design
+### Authentication Architecture
+- **기술 스택**: Node.js + Express + JWT
+- **데이터베이스**: MongoDB
+- **암호화**: bcrypt
+
+## Tasks
+### TASK-001: JWT 인증 API 구현
+- **담당**: Backend Developer
+- **상태**: Todo
+- **관련 요구사항**: REQ-001
+- **하위 작업**:
+  - [ ] 로그인 엔드포인트
+  - [ ] 토큰 검증 미들웨어
+  - [ ] 패스워드 해싱
+```
+
+### 3. 에이전트 워크스페이스 생성
 ```bash
-python email_analyzer.py
+# 자동으로 생성됨
+project/
+├── .ai-specs/
+│   └── master-spec.md
+└── ~/.vscode-a3agent-crew/
+    └── worktrees/
+        ├── claude-21-session-1852b743bcf3bbb0/    # feat-21-session-1852b743bcf3bbb0 브랜치
+        ├── cursor-22-session-2963c854dcf4ccb1/    # feat-22-session-2963c854dcf4ccb1 브랜치
+        ├── gemini-23-session-3074d965edf5ddc2/    # feat-23-session-3074d965edf5ddc2 브랜치
+        └── kino-24-session-4185ea76fee6eed3/      # feat-24-session-4185ea76fee6eed3 브랜치
 ```
 
-### 4. 📊 샘플 데이터로 시작
-프로그램 실행 후:
-1. 메뉴 13번 "전체 샘플 데이터 생성" 선택
-2. 메뉴 3번 "통합 분석 실행" 선택
-3. 메뉴 5번 "통합 통계 조회"로 결과 확인
+## 🎮 Usage
 
-## 📁 지원하는 데이터 형식
+### 1. 사이드바 패널 열기
+- `Ctrl+Shift+P` → `AI Multi-Agent: Show Panel`
+- 또는 Activity Bar에서 🤖 아이콘 클릭
 
-### 📧 이메일 파일
-```
-emails/
-├── recommendation_001.eml    # 표준 이메일 파일
-├── application_002.msg       # Outlook 메시지 파일
-└── inquiry_003.txt           # 텍스트 파일
+### 2. 마스터 스펙 편집
+```typescript
+// 실시간 변환 및 동기화
+마스터 스펙 수정 → 자동으로 모든 에이전트 워크스페이스 업데이트
 ```
 
-### 🐦 트위터 데이터
+### 3. 에이전트 인스턴스 관리
+```bash
+# 새 인스턴스 생성
+"Create New Instance" → 에이전트 선택 → 작업 할당
 
-#### CSV 형식
-```csv
-comment_id,username,display_name,content,timestamp,likes,retweets,replies,parent_post_content
-1001,ai_expert,AI전문가,"정부 AI 정책관에 지원합니다",2025-06-13 10:30:00,15,3,2,"AI 정책관 모집 공고"
+# 인스턴스 시작/정지
+Instance Panel → Start/Pause/Stop 버튼
+
+# 상태 모니터링
+Real-time status updates in VSCode
 ```
 
-#### JSON 형식 (Twitter API v2)
+### 4. 브랜치별 작업
+```bash
+# 각 에이전트가 독립된 브랜치에서 작업
+git worktree list
+# ~/.vscode-a3agent-crew/worktrees/claude-21-session-1852b743bcf3bbb0    [feat-21-session-1852b743bcf3bbb0]
+# ~/.vscode-a3agent-crew/worktrees/cursor-22-session-2963c854dcf4ccb1    [feat-22-session-2963c854dcf4ccb1]
+# ~/.vscode-a3agent-crew/worktrees/gemini-23-session-3074d965edf5ddc2   [feat-23-session-3074d965edf5ddc2]
+# ~/.vscode-a3agent-crew/worktrees/kino-24-session-4185ea76fee6eed3     [feat-24-session-4185ea76fee6eed3]
+```
+
+## 🔄 Workflow
+
+### 🚀 일반적인 개발 플로우
+
+#### 1. 📋 스펙 정의
+```markdown
+1. 마스터 스펙 작성 (.ai-specs/master-spec.md)
+2. 자동 변환 확인 (모든 워크스페이스)
+3. 에이전트별 스펙 검토
+```
+
+#### 2. 🌿 Git Worktree & TMUX 세션 생성
+```bash
+# 각 에이전트별 독립 워크스페이스 생성
+1. Git worktree 생성 (feat/agent-claude-session/1)
+2. TMUX 세션 시작 (ai-agent-claude)
+3. 독립 브랜치에서 작업 환경 준비
+```
+
+#### 3. 🤖 멀티 에이전트 병렬 작업
+```typescript
+1. Claude: 전체 아키텍처 설계 (feat/agent-claude-session/1)
+2. Cursor: 실시간 코딩 지원 (feat/agent-cursor-session/1)
+3. Gemini: 문서 작성 및 테스트 (feat/agent-gemini-session/1)
+4. Kino: AWS 인프라 설정 (feat/agent-kino-session/1)
+```
+
+#### 4. 🔄 코드 통합
+```bash
+1. 각 Git worktree에서 독립 작업
+2. 완료된 작업을 main으로 머지
+3. 충돌 없는 깔끔한 통합
+4. TMUX 세션 정리 및 정리
+```
+
+## 🎨 UI Components
+
+### 1. Activity Bar 통합 패널
+```
+🤖 AI Multi-Agent
+├── 📊 Agent Dashboard
+│   ├── 📝 Master Spec Status
+│   ├── 🤖 Agent Instances
+│   │   ├── Claude (Running) ✅
+│   │   ├── Cursor (Idle) ⏸️
+│   │   ├── Gemini (Working) 🔄
+│   │   └── Kino (Offline) ❌
+│   ├── 🔄 Sync Status
+│   └── 📖 Usage Guide
+└── 📈 System Status
+    ├── 📊 Activity Stats
+    ├── 📅 Activity Timeline
+    │   ├── [10:30] Claude: File modified README.md
+    │   ├── [10:25] Gemini: Terminal session started
+    │   ├── [10:20] Cursor: Git commit created
+    │   └── [10:15] Claude: Agent registered
+    ├── 🎛️ Filter Controls
+    └── 💾 Export Options
+```
+
+### 2. 상태 표시기
+```typescript
+// 하단 상태바
+"🤖 Multi-Agent: 4 instances | ✅ Synced | 📊 75% Complete"
+```
+
+### 3. 명령 팔레트
+```bash
+Ctrl+Shift+P 명령어:
+- AI Multi-Agent: Initialize Project
+- AI Multi-Agent: Create Agent Instance
+- AI Multi-Agent: Sync All Agents
+- AI Multi-Agent: Show Dashboard
+- AI Multi-Agent: Export Report
+- AI Multi-Agent: Open Dashboard in Editor
+- AI Multi-Agent: Settings
+```
+
+## ⚙️ Configuration
+
+### 1. 에이전트 설정
 ```json
-[
-  {
-    "id": "1001",
-    "user": {
-      "username": "ai_expert",
-      "name": "AI전문가"
+// .ai-specs/config.json
+{
+  "agents": {
+    "claude": {
+      "enabled": true,
+      "format": "markdown",
+      "path": ".claude/rules.md",
+      "branch_prefix": "feature/claude-"
     },
-    "text": "정부 AI 정책관에 지원합니다",
-    "created_at": "2025-06-13T10:30:00Z",
-    "public_metrics": {
-      "like_count": 15,
-      "retweet_count": 3,
-      "reply_count": 2
+    "cursor": {
+      "enabled": true,
+      "format": "mdc",
+      "path": ".cursor/rules.mdc",
+      "branch_prefix": "feature/cursor-"
     },
-    "referenced_tweets": [
-      {"text": "AI 정책관 모집 공고"}
-    ]
+    "gemini": {
+      "enabled": true,
+      "format": "markdown",
+      "path": ".gemini/instructions.md",
+      "branch_prefix": "feature/gemini-"
+    },
+    "kino": {
+      "enabled": false,
+      "format": "aws",
+      "path": ".kino/spec.aws",
+      "branch_prefix": "feature/kino-"
+    }
+  },
+  "sync": {
+    "auto_sync": true,
+    "watch_files": true,
+    "debounce_ms": 1000
   }
-]
-```
-
-## 🗃️ 데이터베이스 구조
-
-```sql
-CREATE TABLE content_analysis (
-    id INTEGER PRIMARY KEY,
-    content_type TEXT,           -- 'email' 또는 'twitter'
-    source_file TEXT,            -- 소스 파일명
-    content_id TEXT,             -- 트위터 댓글 ID
-    username TEXT,               -- 사용자명/발신자명
-    display_name TEXT,           -- 표시명
-    is_recommendation INTEGER,   -- 추천 여부 (0/1)
-    government_positions TEXT,   -- AI가 추출한 정부 직책
-    ai_summary TEXT,             -- AI 생성 요약
-    received_date TEXT,          -- 작성/수신 일시
-    sender_email TEXT,           -- 이메일 주소
-    ai_keywords TEXT,            -- AI 추출 키워드
-    recommendation_type TEXT,    -- 추천 유형 분류
-    confidence_score INTEGER,    -- 신뢰도 점수 (1-10)
-    ai_provider TEXT,            -- 사용된 AI 제공자
-    likes_count INTEGER,         -- 소셜미디어 좋아요 수
-    retweets_count INTEGER,      -- 리트윗 수
-    replies_count INTEGER,       -- 댓글 수
-    parent_post_content TEXT,    -- 원글/제목 내용
-    created_at TIMESTAMP         -- 처리 일시
-);
-```
-
-## 📊 AI 분석 결과 예시
-
-### 📧 이메일 분석 결과
-```json
-{
-  "is_recommendation": true,
-  "government_positions": ["AI 정책관", "담당관"],
-  "summary": "서울대 박사과정, AI 연구소 3년 경력, 정부 자문위원 활동",
-  "keywords": ["박사과정", "AI", "연구소", "자문위원", "논문"],
-  "recommendation_type": "타인추천",
-  "confidence": 9
 }
 ```
 
-### 🐦 트위터 댓글 분석 결과
+### 2. 워크스페이스 설정
 ```json
+// .ai-specs/config.json
 {
-  "is_recommendation": true,
-  "government_positions": ["스타트업 정책관"],
-  "summary": "테크 스타트업 5개 창업, 정부 R&D 과제 수행 경험",
-  "keywords": ["스타트업", "창업", "R&D", "정책", "테크"],
-  "recommendation_type": "본인지원",
-  "confidence": 8
+  "workspace": {
+    "baseDir": "~/.vscode-a3agent-crew/worktrees",
+    "logsDir": "~/.vscode-a3agent-crew/logs",
+    "tempDir": "~/.vscode-a3agent-crew/temp",
+    "cleanupOnExit": true,
+    "maxWorktrees": 10
+  },
+  "sync": {
+    "autoSync": true,
+    "watchFiles": true,
+    "debounceMs": 1000
+  }
 }
 ```
 
-## 🔧 AI 제공자별 특징 비교
+## 🔧 Troubleshooting
 
-| 제공자 | 장점 | 단점 | 권장 사용 사례 | 한국어 지원 |
-|--------|------|------|----------------|-------------|
-| **🏠 Ollama** | • 완전 로컬 처리<br>• 무료 사용<br>• 개인정보 보호<br>• 무제한 사용 | • 초기 설정 필요<br>• 하드웨어 요구사항<br>• 상대적으로 느림 | 보안이 중요한 환경<br>대량 데이터 처리 | ⭐⭐⭐⭐ |
-| **🌐 OpenAI** | • 최고 수준 성능<br>• 빠른 응답 속도<br>• 안정적 서비스<br>• 다양한 모델 | • 사용료 부과<br>• 인터넷 필요<br>• API 사용량 제한 | 고품질 분석 필요<br>소량 정밀 분석 | ⭐⭐⭐⭐⭐ |
-| **🧠 Claude** | • 우수한 한국어<br>• 정확한 분석<br>• 윤리적 AI<br>• 긴 컨텍스트 | • 사용료 부과<br>• API 사용량 제한<br>• 상대적 고비용 | 정확성 중요 업무<br>복잡한 문서 분석 | ⭐⭐⭐⭐⭐ |
+### 일반적인 문제 해결
 
-## 💻 시스템 요구사항
-
-### 최소 요구사항
-- **Python**: 3.8 이상
-- **RAM**: 4GB 이상
-- **저장공간**: 2GB 이상
-- **운영체제**: Windows 10+, macOS 10.14+, Ubuntu 18.04+
-
-### Ollama 사용 시 권장사항
-- **RAM**: 8GB 이상 (16GB 권장)
-- **GPU**: NVIDIA GPU 8GB+ (선택사항, 성능 대폭 향상)
-- **저장공간**: 20GB 이상 (AI 모델 저장용)
-- **CPU**: 멀티코어 프로세서 권장
-
-## 📈 성능 최적화 가이드
-
-### 🚀 Ollama 성능 향상
+#### 1. 동기화 실패
 ```bash
-# GPU 가속 사용 (NVIDIA GPU)
-ollama pull llama3.1:8b
-
-# 경량화 모델 사용 (빠른 처리)
-ollama pull qwen2:7b
-
-# 고성능 모델 사용 (높은 정확도)
-ollama pull solar:10.7b
-
-# 모델별 메모리 사용량
-# qwen2:7b     : ~4GB RAM
-# llama3.1:8b  : ~6GB RAM  
-# solar:10.7b  : ~8GB RAM
+문제: 에이전트별 파일이 업데이트되지 않음
+해결: 
+1. Ctrl+Shift+P → "AI Multi-Agent: Force Sync"
+2. .ai-specs/config.json 확인
+3. 파일 권한 확인
 ```
 
-### ⚡ 대량 처리 최적화
-- **배치 크기**: 한 번에 50-100개 파일 처리
-- **중간 저장**: 100개마다 결과 백업
-- **병렬 처리**: 여러 AI 인스턴스 동시 실행 가능
-- **메모리 관리**: 대용량 파일은 청크 단위로 분할 처리
+#### 2. 워크스페이스 충돌
+```bash
+문제: Git worktree 생성 실패
+해결:
+1. git worktree prune
+2. 기존 브랜치 정리
+3. 프로젝트 재초기화
+```
 
-## 🔄 업데이트 로그
+#### 3. 에이전트 인스턴스 오류
+```bash
+문제: 에이전트가 시작되지 않음
+해결:
+1. 각 에이전트 설치 상태 확인
+2. API 키 설정 확인
+3. 로그 파일 확인 (.ai-specs/logs/)
+```
 
-### 🚀 v3.0.0 (2025-06-14) - 통합 소셜미디어 분석
-**Major Release: 트위터 댓글 분석 지원**
+### 로그 확인
+```bash
+# 확장 로그
+Ctrl+Shift+P → "Developer: Show Extension Host"
 
-🆕 **새로운 기능**
-- **🐦 트위터 댓글 분석**: 소셜미디어 댓글에서 인재 추천 발굴
-- **📊 통합 데이터베이스**: 이메일과 트위터 데이터를 하나의 DB에서 관리
-- **🔄 멀티 플랫폼 지원**: 동일한 AI 모듈로 이메일과 트위터 분석
-- **📈 소셜미디어 지표**: 좋아요, 리트윗, 댓글 수 분석
-- **🎯 추천 유형 분류**: "본인지원", "타인추천", "의견제시" 자동 구분
-- **📱 컨텍스트 분석**: 트위터 원글과 댓글 함께 분석
+# 에이전트별 로그
+.ai-specs/logs/
+├── claude.log
+├── cursor.log
+├── gemini.log
+└── sync.log
+```
 
-🔧 **기술적 개선**
-- **📁 다양한 데이터 형식**: CSV, JSON (Twitter API v2) 지원
-- **🔗 통합 아키텍처**: 확장 가능한 멀티 플랫폼 구조
-- **📊 향상된 통계**: 플랫폼별, 인기도별 상세 분석
-- **🎨 개선된 UI**: 13개 메뉴로 기능별 체계적 구성
+## 📊 Advanced Features (v1.3.0)
 
-🐛 **버그 수정**
-- 대용량 파일 처리 시 메모리 누수 해결
-- 한국어 인코딩 문제 개선
-- JSON 파싱 오류 처리 강화
+### 1. 🖥️ TMUX 세션 & Git Worktree 통합 관리
+```typescript
+// Agent Hook Service로 실시간 추적
+- 파일 변경 감지 (VSCode FileSystemWatcher)
+- TMUX 터미널 세션 추적 및 관리
+- Git worktree 상태 모니터링 (커밋, 상태 변경)
+- 에이전트 상태 라이프사이클 (active, idle, working, offline, error)
+```
+
+### 2. Activity Timeline 인터페이스
+```markdown
+📅 실시간 타임라인 뷰
+├── 🤖 에이전트별 활동 카드 (색상 코딩)
+├── 📊 활동 통계 (총 활동, 파일 변경, 커밋, 세션)
+├── 🎛️ 에이전트별 필터링
+├── 📤 활동 로그 내보내기 (JSON)
+└── 🔄 자동 새로고침 (10초 간격)
+```
+
+### 3. 🖥️ TMUX 터미널 통합
+```bash
+# 각 에이전트마다 독립적인 TMUX 세션
+tmux list-sessions
+# ai-agent-claude   (attached)
+# ai-agent-cursor   (detached)
+# ai-agent-gemini   (attached)
+
+# Git worktree와 TMUX 세션 1:1 매핑
+agent/claude-1640995200000  →  ai-agent-claude
+agent/cursor-1640995300000  →  ai-agent-cursor
+agent/gemini-1640995400000  →  ai-agent-gemini
+
+# 자동 브랜치 생성 및 체크아웃
+feat/agent-claude-session/1
+feat/agent-cursor-session/1
+feat/agent-gemini-session/1
+```
+
+### 4. 활동 로그 및 감사 추적
+```json
+// .ai-specs/logs/agent-activities-YYYY-MM-DD.json
+{
+  "id": "activity-1640995200000-abc123",
+  "agentType": "claude",
+  "timestamp": "2024-07-17T10:30:00.000Z",
+  "activityType": "file_changed",
+  "details": "File modified: README.md",
+  "location": "/path/to/worktree/README.md",
+  "branch": "agent/claude-1640995200000",
+  "metadata": {
+    "relativePath": "README.md"
+  }
+}
+```
+
+### 5. 템플릿 시스템
+```yaml
+# 프로젝트 타입별 템플릿
+templates/
+├── web-app.yaml
+├── mobile-app.yaml
+├── api-service.yaml
+└── custom.yaml
+```
+
+### 6. 진행률 추적
+```typescript
+// 자동 진행률 계산
+const progress = {
+  requirements: completedReqs / totalReqs,
+  design: completedDesigns / totalDesigns,
+  tasks: completedTasks / totalTasks
+};
+```
+
+### 7. 보고서 생성
+```markdown
+# 자동 생성 보고서
+- 에이전트별 작업 통계 및 활동 내역
+- 완료율 및 소요 시간 분석
+- 파일 변경 패턴 및 Git 활동
+- 터미널 세션 사용량 추적
+- 협업 효율성 분석
+```
+
+## 🤝 Contributing
+
+### 새로운 에이전트 추가
+```typescript
+// src/agents/newAgent.ts
+export class NewAgentTransformer implements AgentTransformer {
+  transform(masterSpec: MasterSpec): string {
+    // 변환 로직 구현
+  }
+  
+  getConfigPath(): string {
+    return '.newagent/config.yaml';
+  }
+}
+```
+
+### 변환 규칙 커스터마이징
+```typescript
+// 커스텀 변환기 등록
+registerTransformer('custom-agent', new CustomTransformer());
+```
+
+## 🆘 Support
+
+- **GitHub Issues**: 버그 리포트 및 기능 요청
+- **Documentation**: 상세 가이드 및 API 문서
+- **Community**: Discord 커뮤니티 참여
 
 ---
 
-### 🎯 v2.0.0 (2025-06-13) - AI 기반 분석 시스템
-**Major Release: 인공지능 도입**
+**"🚀 Unify all AI agents with one specification, enable flexible format conversion, and build a stable development environment with 🌿 Git Worktree and 🖥️ TMUX sessions!"**
 
-🆕 **새로운 기능**
-- **🤖 AI 기반 분석**: Ollama, OpenAI, Claude 지원
-- **🏠 로컬 AI**: Ollama를 통한 완전한 온디바이스 처리
-- **📝 스마트 요약**: AI가 생성하는 핵심 내용 요약
-- **🔖 지능형 키워드**: 문맥 이해 기반 키워드 추출
-- **⭐ 신뢰도 점수**: AI 분석 결과의 품질 평가 (1-10점)
-
-🔧 **기술적 개선**
-- **🔧 모듈화 설계**: AIProvider 추상 클래스 기반 확장 구조
-- **⚙️ 설정 관리**: JSON 기반 AI 제공자별 설정 저장
-- **🔌 연결 테스트**: AI 서비스 상태 실시간 확인
-- **📊 향상된 데이터베이스**: 신뢰도, AI 제공자 정보 추가
-
-🎨 **사용자 경험**
-- **🖥️ 대화형 메뉴**: 9개 카테고리로 체계화된 인터페이스
-- **📘 상세 가이드**: Ollama 설치, 트위터 데이터 형식 안내
-- **🔍 실시간 모니터링**: 분석 진행 상황 및 결과 실시간 표시
-
----
-
-### 📧 v1.0.0 (2025-06-12) - 기본 이메일 분석
-**Initial Release: 기본 기능 구현**
-
-🎉 **핵심 기능**
-- **📧 이메일 파일 분석**: .eml, .msg, .txt 형식 지원
-- **🗃️ SQLite 데이터베이스**: 로컬 데이터 저장 및 관리
-- **📋 기본 분류**: 규칙 기반 추천 이메일 분류
-- **📄 CSV 내보내기**: 스프레드시트 호환 결과 출력
-
-🔧 **기술 기반**
-- **🐍 Python 3.8+**: 크로스 플랫폼 지원
-- **📚 표준 라이브러리**: 최소한의 외부 의존성
-- **📊 정부 직책 DB**: 30여 개 정부 직책명 사전 구축
-- **🔤 인코딩 자동 감지**: 다양한 문자 인코딩 처리
-
----
-
-## 📅 로드맵
-
-### 🔮 v4.0.0 (계획) - 고급 분석 및 시각화
-- **📊 대시보드 웹 인터페이스**: Flask/FastAPI 기반 웹 UI
-- **📈 고급 통계 분석**: 시계열 분석, 트렌드 예측
-- **🎨 데이터 시각화**: 차트, 그래프, 히트맵
-- **🔄 실시간 모니터링**: 새 데이터 자동 감지 및 처리
-- **📱 모바일 지원**: 반응형 웹 디자인
-
-### 🌐 v3.5.0 (계획) - 소셜미디어 확장
-- **📘 페이스북 댓글 분석**: 페이스북 포스트 댓글 지원
-- **💼 링크드인 게시물**: 전문직 네트워크 분석
-- **📺 유튜브 댓글**: 동영상 댓글에서 인재 추천 발굴
-- **📊 크로스 플랫폼 분석**: 다중 소셜미디어 통합 분석
-
-### 🤖 v3.2.0 (계획) - AI 성능 향상
-- **🧠 멀티모달 AI**: 텍스트 + 이미지 통합 분석
-- **🎯 전문 분야별 특화**: 분야별 맞춤형 AI 모델
-- **📚 학습 기능**: 사용자 피드백 기반 모델 개선
-- **🔍 의미적 검색**: 벡터 DB 기반 유사 인재 검색
-
-## 🤝 기여하기
-
-### 📝 기여 방법
-1. **Fork** 저장소를 포크합니다
-2. **Branch** 새 기능 브랜치를 생성합니다 (`git checkout -b feature/AmazingFeature`)
-3. **Commit** 변경사항을 커밋합니다 (`git commit -m 'Add AmazingFeature'`)
-4. **Push** 브랜치에 푸시합니다 (`git push origin feature/AmazingFeature`)
-5. **Pull Request** 풀 리퀘스트를 열어주세요
-
-### 🐛 버그 리포트
-- **이슈 템플릿**: 상세한 재현 단계와 환경 정보 포함
-- **로그 첨부**: 오류 로그와 설정 파일 첨부
-- **스크린샷**: UI 관련 문제 시 스크린샷 포함
-
-### 💡 기능 제안
-- **사용 사례**: 구체적인 사용 시나리오 설명
-- **기술적 고려사항**: 구현 방법과 영향도 분석
-- **우선순위**: 기능의 중요도와 영향도 평가
-
-## 📄 라이센스
-
-이 프로젝트는 **MIT 라이센스** 하에 배포됩니다.
-- ✅ 상업적 사용 가능
-- ✅ 수정 및 배포 가능
-- ✅ 개인적 사용 가능
-- ❗ 라이센스 및 저작권 고지 필요
-
-자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 🆘 지원 및 커뮤니티
-
-### 📞 지원 채널
-- **📋 GitHub Issues**: 버그 리포트 및 기능 요청
-- **💬 GitHub Discussions**: 사용법 질문 및 아이디어 공유
-- **📖 Wiki**: 상세한 사용 가이드 및 FAQ
-- **📧 Email**: 보안 관련 문제나 민감한 사안
-
-### 🏷️ 태그
-`정부-인재-관리` `AI-분석` `소셜미디어-분석` `이메일-분석` `트위터-분석` `Ollama` `로컬-AI` `Python` `데이터-분석` `오픈소스`
-
----
-
-<div align="center">
-
-**🎯 Made with ❤️ for Government Talent Management**
-
-[![GitHub stars](https://img.shields.io/github/stars/username/repo?style=social)](https://github.com/username/repo/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/username/repo?style=social)](https://github.com/username/repo/network)
-[![GitHub issues](https://img.shields.io/github/issues/username/repo)](https://github.com/username/repo/issues)
-
-</div># baryon-agents-parellel-workspace-vsix
+🎯 **Get Started**: `Ctrl+Shift+P` → `AI Multi-Agent: Initialize Project`

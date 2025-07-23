@@ -46,13 +46,14 @@
 ### 1. VSCode Marketplace에서 설치
 ```bash
 # VSCode에서 Extensions 검색
-AI Multi-Agent Spec Extension
+A3 Agent Spec Spec Extension
 ```
+VScode marketplace: https://marketplace.visualstudio.com/items?itemName=a3agent-spec-baryonai.a3agent-spec-baryonai
 
 ### 2. 수동 설치
 ```bash
-# GitHub에서 다운로드
-git clone https://github.com/your-repo/ai-multi-agent-spec-extension
+# GitHub에서 다운로드     //현재 작동 안 됨. It’s not working now. Please wait for an update.
+git clone https://github.com/your-repo/ai-multi-agent-spec-extension 
 cd ai-multi-agent-spec-extension
 npm install
 npm run package
@@ -62,13 +63,14 @@ npm run package
 - **VSCode**: 1.80 이상
 - **Git**: 2.20 이상 (worktree 지원)
 - **Node.js**: 16 이상
+- **TMUX**: ```brew install tmux``` 권장
 
 ## 🔧 Setup
 
 ### 1. 프로젝트 초기화
 ```bash
 # 프로젝트 폴더에서
-Ctrl+Shift+P → "AI Multi-Agent: Initialize Project"
+Ctrl+Shift+P → "A3 Agent Spec: Initialize Project"
 ```
 
 ### 2. 마스터 스펙 생성
@@ -120,7 +122,7 @@ project/
 ## 🎮 Usage
 
 ### 1. 사이드바 패널 열기
-- `Ctrl+Shift+P` → `AI Multi-Agent: Show Panel`
+- `Ctrl+Shift+P` → `A3 Agent Spec: Show Panel`
 - 또는 Activity Bar에서 🤖 아이콘 클릭
 
 ### 2. 마스터 스펙 편집
@@ -190,7 +192,7 @@ git worktree list
 
 ### 1. Activity Bar 통합 패널
 ```
-🤖 AI Multi-Agent
+🤖 A3 Agent Spec
 ├── 📊 Agent Dashboard
 │   ├── 📝 Master Spec Status
 │   ├── 🤖 Agent Instances
@@ -220,13 +222,13 @@ git worktree list
 ### 3. 명령 팔레트
 ```bash
 Ctrl+Shift+P 명령어:
-- AI Multi-Agent: Initialize Project
-- AI Multi-Agent: Create Agent Instance
-- AI Multi-Agent: Sync All Agents
-- AI Multi-Agent: Show Dashboard
-- AI Multi-Agent: Export Report
-- AI Multi-Agent: Open Dashboard in Editor
-- AI Multi-Agent: Settings
+- A3 Agent Spec: Initialize Project
+- A3 Agent Spec: Create Agent Instance
+- A3 Agent Spec: Sync All Agents
+- A3 Agent Spec: Show Dashboard
+- A3 Agent Spec: Export Report
+- A3 Agent Spec: Open Dashboard in Editor
+- A3 Agent Spec: Settings
 ```
 
 ## ⚙️ Configuration
@@ -296,7 +298,7 @@ Ctrl+Shift+P 명령어:
 ```bash
 문제: 에이전트별 파일이 업데이트되지 않음
 해결: 
-1. Ctrl+Shift+P → "AI Multi-Agent: Force Sync"
+1. Ctrl+Shift+P → "A3 Agent Spec: Force Sync"
 2. .ai-specs/config.json 확인
 3. 파일 권한 확인
 ```
@@ -451,4 +453,4 @@ registerTransformer('custom-agent', new CustomTransformer());
 
 **"🚀 Unify all AI agents with one specification, enable flexible format conversion, and build a stable development environment with 🌿 Git Worktree and 🖥️ TMUX sessions!"**
 
-🎯 **Get Started**: `Ctrl+Shift+P` → `AI Multi-Agent: Initialize Project`
+🎯 **Get Started**: `Ctrl+Shift+P` → `A3 Agent Spec: Initialize Project`
